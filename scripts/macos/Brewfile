@@ -64,10 +64,9 @@ cask "microsoft-office"            # Microsoft's productivity suite
 cask "nordvpn"                     # VPN service
 cask "notion"                      # A note-taking and project management application
 cask "obsidian"                    # A powerful knowledge base on top of a local folder of plain text files
-cask "plex-media-player"           # A client for the Plex Media Server
+cask "plex"                        # A client for the Plex Media Server
 cask "quicken"                     # Personal finance management software
 cask "spotify"                     # Music streaming service
 cask "steam"                       # Video game digital distribution service
 cask "the-unarchiver"              # A more capable replacement for the built-in archive utility
 cask "vlc"                         # A free and open source cross-platform multimedia player
-cask "visual-studio-code"          # A popular code editor (Visual Studio)
