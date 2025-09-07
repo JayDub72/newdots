@@ -29,12 +29,28 @@ install_xcode_command_line_tools() {
 install_homebrew() {
     header "Installing Homebrew"
     
+    # Determine Homebrew prefix based on architecture
+    if [[ "$(uname -m)" == "arm64" ]]; then
+        # Apple Silicon
+        HOMEBREW_PREFIX="/opt/homebrew"
+    else
+        # Intel
+        HOMEBREW_PREFIX="/usr/local"
+    fi
+    
+    # Check if Homebrew is installed
     if ! command -v brew &> /dev/null; then
+        log "Homebrew not found. Installing..."
+        # Run the installer non-interactively
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         log "Homebrew installed."
     else
         log "Homebrew is already installed."
     fi
+
+    # Add Homebrew to the current session's PATH
+    export PATH="${HOMEBREW_PREFIX}/bin:${PATH}"
+    log "Homebrew added to PATH for this session."
 }
 
 # --- Install Brewfile Packages ---
