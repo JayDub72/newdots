@@ -5,7 +5,7 @@
 LOG_FILE="$HOME/dotfiles-setup.log"
 DOTFILES_DIR="$HOME/dotfiles"
 BREWFILE_PATH="$(dirname "$0")/scripts/macos/Brewfile"
-MACOS_DEFAULTS_SCRIPT="$DOTFILES_DIR/macos-defaults.sh"ash
+MACOS_DEFAULTS_SCRIPT="$DOTFILES_DIR/macos-defaults.sh"
 
 
 # --- Source Scripts ---

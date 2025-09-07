@@ -5,43 +5,45 @@ tap "homebrew/bundle"              # Required for `brew bundle` command
 tap "homebrew/cask"                # Cask for installing macOS applications
 tap "homebrew/cask-fonts"          # Cask for installing fonts
 tap "romkatv/powerlevel10k"        # For the Powerlevel10k Zsh theme
+tap "ebullient/tap"                # For ttrpg-convert-cli
 
-# Misc
-brew "coreutils"                   # GNU core utilities (macOS versions are outdated)
-brew "eza"                         # A modern replacement for `ls`
-brew "findutils"                   # Collection of GNU `find`, `xargs`, and `locate`
-brew "grc"                         # Generic colouriser for logfiles and command output
-brew "grep"                        # GNU `grep`, `egrep` and `fgrep`
-brew "neofetch"                    # A command-line system information tool
-brew "ssh-copy-id"                 # A script to install your public key on a remote machine
-brew "tree"                        # Display directories as trees
-brew "wget"                        # A non-interactive network retriever
-brew "gh"                          # GitHub's official command-line tool
-
-
-# Shells & Utilities
+# ZSH files
 brew "zsh"                         # The Z shell
 brew "zsh-completions"             # Additional completion definitions for Zsh
 brew "zsh-syntax-highlighting"     # Syntax highlighting for the shell
 brew "zsh-autosuggestions"         # Fish-like autosuggestions for Zsh
 brew "romkatv/powerlevel10k/powerlevel10k" # Powerlevel10k Zsh theme
-brew "git"                         # Version control system
-brew "wget"                        # A non-interactive network retriever
+
+# Misclellaneous Tools
+brew "coreutils"                   # GNU core utilities (macOS versions are outdated)
 brew "curl"                        # A tool to transfer data from or to a server
+brew "git"                         # Version control system
+brew "gh"                          # GitHub's official command-line tool
+brew "eza"                         # A modern replacement for `ls`
+brew "findutils"                   # Collection of GNU `find`, `xargs`, and `locate`
+brew "grc"                         # Generic colouriser for logfiles and command output
+brew "grep"                        # GNU `grep`, `egrep` and `fgrep`
 brew "htop"                        # An interactive process viewer
 brew "mas"                         # Mac App Store command-line interface
+brew "neofetch"                    # A command-line system information tool
+brew "ssh-copy-id"                 # A script to install your public key on a remote machine
+brew "tree"                        # Display directories as trees
+brew "wget"                        # A non-interactive network retriever
 
 # Development Tools
 cask "visual-studio-code"          # A popular code editor
 cask "iterm2"                      # A replacement for the default terminal
 cask "docker"                      # A platform for developing, shipping, and running applications in containers
+cask "utm"                         # Run virtual machines on macOS
 
 # Browsers
-cask "google-chrome"               # The most popular web browser
 cask "firefox"                     # A free and open-source web browser
+cask "google-chrome"               # The most popular web browser
 
 # Fonts for Powerlevel10k
 cask "font-hack-nerd-font"          # A Nerd Font for Powerlevel10k icons
+cask 'font-meslo-for-powerlevel10k' # Font recommended by Powerlevel10k
+cask "font-getbrains-mono-nerd-font" # An excellent font for monospaced coding/editing
 
 # Mac Utilities
 brew "dockutil"                    # A command-line tool for managing macOS Dock items
@@ -50,3 +52,25 @@ brew "exiftool"                    # Read, write and edit meta information in a 
 
 # RPG stuff
 brew "ttrpg-convert-cli"           # A command-line tool for converting TTRPG files
+
+# Applications
+cask "1password"                   # Password manager
+cask "appcleaner"                  # A utility to thoroughly uninstall applications
+cask "backblaze"                   # Cloud backup service
+cask "chatgpt"                     # Desktop client for ChatGPT
+cask "discord"                     # Voice, video, and text chat app
+cask "gimp"                        # Free & open source image editor
+cask "google-drive"                # File storage and synchronization service
+cask "keka"                        # A free file archiver for macOS
+cask "logos"                       # Bible study software
+cask "microsoft-office"            # Microsoft's productivity suite
+cask "nordvpn"                     # VPN service
+cask "notion"                      # A note-taking and project management application
+cask "obsidian"                    # A powerful knowledge base on top of a local folder of plain text files
+cask "plex-media-player"           # A client for the Plex Media Server
+cask "quicken"                     # Personal finance management software
+cask "spotify"                     # Music streaming service
+cask "steam"                       # Video game digital distribution service
+cask "the-unarchiver"              # A more capable replacement for the built-in archive utility
+cask "vlc"                         # A free and open source cross-platform multimedia player
+cask "visual-studio-code"          # A popular code editor (Visual Studio)
