@@ -1,0 +1,53 @@
+# Brewfile - A list of packages to install with Homebrew.
+
+# Taps - Add external repositories
+tap "homebrew/bundle"              # Required for `brew bundle` command
+tap "homebrew/cask"                # Cask for installing macOS applications
+tap "homebrew/cask-fonts"          # Cask for installing fonts
+tap "romkatv/powerlevel10k"        # For the Powerlevel10k Zsh theme
+
+# Misc
+brew "coreutils"
+brew "eza"
+brew "findutils"
+brew "grc"
+brew "grep"
+brew "neofetch"
+brew "ssh-copy-id"
+brew "tree"
+brew "wget"
+brew "gh"
+
+
+# Shells & Utilities
+brew "zsh"                         # The Z shell
+brew "zsh-completions"             # Additional completion definitions for Zsh
+brew "zsh-syntax-highlighting"     # Syntax highlighting for the shell
+brew "zsh-autosuggestions"         # Fish-like autosuggestions for Zsh
+brew "romkatv/powerlevel10k/powerlevel10k" # Powerlevel10k Zsh theme
+brew "git"                         # Version control system
+brew "wget"                        # A non-interactive network retriever
+brew "curl"                        # A tool to transfer data from or to a server
+brew "htop"                        # An interactive process viewer
+brew "mas"                         # Mac App Store command-line interface
+
+# Development Tools
+cask "visual-studio-code"          # A popular code editor
+cask "iterm2"                      # A replacement for the default terminal
+cask "docker"                      # A platform for developing, shipping, and running applications in containers
+
+# Browsers
+cask "google-chrome"               # The most popular web browser
+cask "firefox"                     # A free and open-source web browser
+
+# Fonts for Powerlevel10k
+cask "font-hack-nerd-font"          # A Nerd Font for Powerlevel10k icons
+
+# Mac Utilities
+brew "dockutil"
+brew "duti"
+brew "exiftool"
+
+# RPG stuff
+brew "ttrpg-convert-cli"
+
