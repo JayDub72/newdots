@@ -7,16 +7,16 @@ tap "homebrew/cask-fonts"          # Cask for installing fonts
 tap "romkatv/powerlevel10k"        # For the Powerlevel10k Zsh theme
 
 # Misc
-brew "coreutils"
-brew "eza"
-brew "findutils"
-brew "grc"
-brew "grep"
-brew "neofetch"
-brew "ssh-copy-id"
-brew "tree"
-brew "wget"
-brew "gh"
+brew "coreutils"                   # GNU core utilities (macOS versions are outdated)
+brew "eza"                         # A modern replacement for `ls`
+brew "findutils"                   # Collection of GNU `find`, `xargs`, and `locate`
+brew "grc"                         # Generic colouriser for logfiles and command output
+brew "grep"                        # GNU `grep`, `egrep` and `fgrep`
+brew "neofetch"                    # A command-line system information tool
+brew "ssh-copy-id"                 # A script to install your public key on a remote machine
+brew "tree"                        # Display directories as trees
+brew "wget"                        # A non-interactive network retriever
+brew "gh"                          # GitHub's official command-line tool
 
 
 # Shells & Utilities
@@ -44,10 +44,9 @@ cask "firefox"                     # A free and open-source web browser
 cask "font-hack-nerd-font"          # A Nerd Font for Powerlevel10k icons
 
 # Mac Utilities
-brew "dockutil"
-brew "duti"
-brew "exiftool"
+brew "dockutil"                    # A command-line tool for managing macOS Dock items
+brew "duti"                        # A command-line tool to select default applications for file types
+brew "exiftool"                    # Read, write and edit meta information in a wide variety of files
 
 # RPG stuff
-brew "ttrpg-convert-cli"
-
+brew "ttrpg-convert-cli"           # A command-line tool for converting TTRPG files
