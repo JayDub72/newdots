@@ -1,6 +1,4 @@
-#!/bin/zsh
-# setup.sh - OS detection and dispatcher
-# Author: [Your Name]
+#!/bin/bash
 # Description: Detects OS and calls the appropriate setup script for macOS or Ubuntu.
 
 set -e
@@ -17,7 +15,7 @@ detect_os() {
 
 OS_TYPE=$(detect_os)
 if [[ "$OS_TYPE" == "macos" ]]; then
-    echo "🫆 Detected macOS. Running MacOS setup..."
+    echo "Detected macOS. Running MacOS setup..."
     zsh "$(dirname "$0")/macos-setup.sh"
 elif [[ "$OS_TYPE" == "ubuntu" ]]; then
     echo "Detected Ubuntu. Running Ubuntu setup..."
