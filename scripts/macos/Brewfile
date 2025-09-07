@@ -1,9 +1,6 @@
 # Brewfile - A list of packages to install with Homebrew.
 
 # Taps - Add external repositories
-tap "homebrew/bundle"              # Required for `brew bundle` command
-tap "homebrew/cask"                # Cask for installing macOS applications
-tap "homebrew/cask-fonts"          # Cask for installing fonts
 tap "romkatv/powerlevel10k"        # For the Powerlevel10k Zsh theme
 tap "ebullient/tap"                # For ttrpg-convert-cli
 
@@ -43,7 +40,7 @@ cask "google-chrome"               # The most popular web browser
 # Fonts for Powerlevel10k
 cask "font-hack-nerd-font"          # A Nerd Font for Powerlevel10k icons
 cask 'font-meslo-for-powerlevel10k' # Font recommended by Powerlevel10k
-cask "font-getbrains-mono-nerd-font" # An excellent font for monospaced coding/editing
+cask "font-jetbrains-mono-nerd-font" # An excellent font for monospaced coding/editing
 
 # Mac Utilities
 brew "dockutil"                    # A command-line tool for managing macOS Dock items
