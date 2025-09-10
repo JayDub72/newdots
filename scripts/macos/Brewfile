@@ -2,7 +2,6 @@
 
 # Taps - Add external repositories
 tap "romkatv/powerlevel10k"        # For the Powerlevel10k Zsh theme
-tap "ebullient/tap"                # For ttrpg-convert-cli
 
 # ZSH files
 brew "zsh"                         # The Z shell
@@ -46,9 +45,6 @@ cask "font-jetbrains-mono-nerd-font" # An excellent font for monospaced coding/e
 brew "dockutil"                    # A command-line tool for managing macOS Dock items
 brew "duti"                        # A command-line tool to select default applications for file types
 brew "exiftool"                    # Read, write and edit meta information in a wide variety of files
-
-# RPG stuff
-brew "ttrpg-convert-cli"           # A command-line tool for converting TTRPG files
 
 # Applications
 cask "1password"                   # Password manager

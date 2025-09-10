@@ -13,6 +13,7 @@ source "$(dirname "$0")/scripts/utils.sh"
 source "$(dirname "$0")/scripts/common/dotfiles.sh"
 source "$(dirname "$0")/scripts/macos/homebrew.sh"
 source "$(dirname "$0")/scripts/macos/macos-defaults.sh"
+source "$(dirname "$0")/scripts/macos/sudoers.sh"
 
 # --- Main ---
 main() {
@@ -35,7 +36,9 @@ main() {
     install_homebrew
     
     # Install Brewfile packages
+    allow_brew_no_password
     install_brewfile_packages "$BREWFILE_PATH"
+    revert_brew_no_password
     
     # Symlink dotfiles
     symlink_dotfiles "$DOTFILES_DIR"
